@@ -9,11 +9,8 @@
 
         <h3>SPRING DATA JPA</h3>
         <p th:each="customer : ${customerList}">
-            <h4>First name:</h4>
-            <div th:text="${customer.firstName}"></div>
-            <h4>Last name:</h4>
-            <div th:text="${customer.lastName}"></div>
-        <div>---------------------------------------------------------</div>
-    </p>
-</body>
+            <span th:text="${customer.firstName}"></span>
+            <span th:text="${customer.lastName}"></span>
+        </p>
+    </body>
 </html>
