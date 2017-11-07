@@ -48,8 +48,8 @@ class DbController {
         Customer customer = new Customer("Max", "Mustermann");
         customerRepository.save(customer);
         
-        model.addAttribute("customer", customerRepository.findAll());
-        return "hello";
+        model.addAttribute("customerList", customerRepository.findAll());
+        return "db";
     }
 }
 
