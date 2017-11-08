@@ -8,9 +8,26 @@
     <body>
 
         <h3>SPRING DATA JPA</h3>
-        <p th:each="customer : ${customerList}">
-            <span th:text="${customer.firstName}"></span>
-            <span th:text="${customer.lastName}"></span>
-        </p>
+        <form action="/db" method="GET">
+            <button type="submit">reload</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Vorname</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="customer : ${customerList}">
+                    <td th:text="${customer.firstName}">Vorname</td>
+                    <td th:text="${customer.lastName}">Nachname</td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="/db/delete" method="GET">
+            <button type="submit">DB reset</button>
+        </form>
+
     </body>
 </html>
