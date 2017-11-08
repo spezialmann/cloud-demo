@@ -1,4 +1,4 @@
-###Cloud Demo XXL
+### Cloud Demo XXL
 
 - Spring Boot App (start.spring.io)
 - Thymeleaf, Devtools, Lombok, Postgesql, JPA
@@ -6,7 +6,7 @@
 - Ausbaustufe 2: DB Anbindung dazu (Cloud-Dienst)
 - Deployment: HEROKU, Pivotal Cloud Foundry (Openshift, Bluemix, ...)
 
-###HEROKU
+### HEROKU
 + Web UI: https://id.heroku.com/login
 + CLI downloaden und installieren 
 + Steps
@@ -26,7 +26,7 @@
     + Pipelines
     + Repos / Container Registry
 
-###Pivotal Cloud Foundry (PCF)
+### Pivotal Cloud Foundry (PCF)
 + Web UI: https://console.run.pivotal.io
 + CLI downloaden und installieren 
 + Steps
@@ -43,7 +43,7 @@
     + Scaling
     + Configuration
 
-###Misc
+### Misc
     - MongoDB aus Cloud (atlas) >> https://cloud.mongodb.com
     - Weitere Alternativen
         - OpenShift
