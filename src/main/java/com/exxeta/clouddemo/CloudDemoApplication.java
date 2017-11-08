@@ -43,13 +43,19 @@ class DbController {
     CustomerRepository customerRepository;
 
     @RequestMapping("/db")
-    public String hello(Model model) {
+    public String db(Model model) {
         
         Customer customer = new Customer("Max", "Mustermann");
         customerRepository.save(customer);
         
         model.addAttribute("customerList", customerRepository.findAll());
         return "db";
+    }
+    
+    @RequestMapping("/db/delete")
+    public String dbDelete(Model model) {
+        customerRepository.deleteAll();
+        return "redirect:/db";
     }
 }
 
