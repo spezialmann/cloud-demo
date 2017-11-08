@@ -44,9 +44,9 @@
     + Configuration
 
 ### Misc
-    - MongoDB aus Cloud (atlas) >> https://cloud.mongodb.com
-    - Weitere Alternativen
-        - OpenShift
-        - Bluemix
++ MongoDB aus Cloud (atlas) >> https://cloud.mongodb.com
++ Weitere Alternativen
+    + OpenShift
+    + Bluemix
 
 
